@@ -1,0 +1,10 @@
+<mentorama year='2021'>
+    <python type='iniciante'>
+        <modulos>8</modulos>
+        <name>Zero ao Pro</name>
+    </python>
+    <python type='profissiona'>
+        <modulos>9</modulos>
+        <name>Pro</name>
+    </python>
+</mentorama>
