@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*font-family: 'Bebas Neue', cursive;*/
+
+
+
+
+body {
+    background: #D3B3F2;
+    align-items: center;
+}
+
+.filmes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.filme{
+    background-color: #625370;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 5px; 
+}
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.filme:hover{
+    padding: 25px;
+}

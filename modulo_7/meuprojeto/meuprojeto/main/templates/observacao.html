@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8">
+    <title>User information form</title>
+</head>
+<body>
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="Submit" name="submit" value="Submit">
+    </form>
+
+    {% if submitbutton == 'Submit' %}
+    <h1>conteudo estudado {{ conteudo }}</h1>
+    <h1>observações {{ observacao }}</h1>
+    {% endif %}
+</body>
