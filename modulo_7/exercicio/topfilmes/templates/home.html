@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus 5 filmes favoritos</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}" type="text/css">
+</head>
+<body>
+    <section class=filmes>
+
+        {% for i in filmes %}
+        <div class="filme">
+            <h2 class="titulo">{{ i.titulo }}</h2>
+            <p class="genero">Gênero: {{ i.genero }}</p>
+            <p class="lancamento">Lançamento: {{ i.lancamento }}</p>
+        </div>
+            {% endfor %}
+    
+    </section>
+</body>
+</html>
