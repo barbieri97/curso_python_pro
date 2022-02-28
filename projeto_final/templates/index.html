@@ -1,0 +1,21 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINGIS</title>
+</head>
+<body align="center">
+    <img src="../static/img/GINGIS.png" alt="logo do gingis">
+    <form action="{{ url_for('index') }}", method="GET">
+        <input type="text" name="url" placeholder="insira um link">
+        <button>🔎</button>
+    </form>
+    {% if variavel %}
+    <a href="{{ variavel }}" target="_blank">{{ variavel }}</a> <br> <br>
+    {% endif %}
+</body>
+</html>
